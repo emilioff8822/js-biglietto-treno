@@ -34,10 +34,16 @@ console.log( 'prezzo finale' , prezzoFin1);
 if (age < 18) {
 
   prezzoFin1 *= 0.8;
+ 
+  document.getElementById("risp").innerHTML = ("Hai diritto ad uno sconto del 20% per i minori di 18 anni.");
 
 } else if (age > 65) {
 
   prezzoFin1 *= 0.6;
+  document.getElementById("risp").innerHTML = ("Hai diritto ad uno sconto del 40% per gli over 65.");
+
+
+
 }
 
 
