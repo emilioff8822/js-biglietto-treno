@@ -40,22 +40,21 @@ if (age < 18) {
 
   prezzoFin1 = prezzoFin1 * 0.6;
 
-  document.getElementById("risp").innerHTML = ("Hai diritto ad uno sconto del 40% per gli over 65.");
+  document.getElementById("risp").innerHTML = ("Hai diritto ad uno sconto del 40% per gli over 65.Il prezzo finale del biglietto in relazione ai km e alla tua eta' è " +  prezzoFin1.toFixed(2) + " € ");
 
 
 
 }
 
 else{
-  prezzoFin1 = prezzoFin1;
 
-  document.getElementById("risp").innerHTML = (" Purtroppo non Hai diritto ad uno sconto ");
+  document.getElementById("risp").innerHTML = (" Purtroppo non Hai diritto ad uno sconto  ");
 
 }
 
 
 
 
-console.log(`Il prezzo finale del biglietto è ${prezzoFin1.toFixed(2)} €`);
+console.log(`Il prezzo finale del biglietto in relazione ai km e alla tua eta' è ${prezzoFin1.toFixed(2)} €`);
 
 
