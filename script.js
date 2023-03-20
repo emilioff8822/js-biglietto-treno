@@ -17,14 +17,14 @@ prezzoFin1 viene scontato del 20% inserito e salvato in una  variabile chiamata 
 
 */
 
-const numKm = prompt('Inserisci il numero di Km da percorrere');
+const numKm = parseInt(prompt("Inserisci il numero di chilometri da percorrere"));
 
-const age = prompt('Inserisci la tua eta');
+const age = parseInt(prompt("Inserisci l'età del passeggero"));
 
-console.log(num);
+console.log(numKm);
 
 const prezzoKm = 0.21;
 
 let prezzoFin1 = numKm * prezzoKm;
 
-console.log(prezzoFin1);
+console.log( 'prezzo finale' , prezzoFin1);
