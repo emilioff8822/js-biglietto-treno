@@ -15,10 +15,10 @@ Passaggi
 3 salva il prezzo di ogni kilometro di viaggio (0.21 eur ) in una variabile chiamata prezzoKm
 
 4 moltiplica la variabile prezzokm  per il numero totale di km da percorrere (numKm)  ed ottieni un prezzo finale.
-Salva questo risultato in una variabile chiamata prezzoFin1
+Salva questo risultato in una variabile chiamata prezzoFin
 
 5 se age del passeggero e' minore di 18 anni
-prezzoFin1 viene scontato del 20%
+prezzoFin1 viene scontato del 20% , aggiorna poi la variabile prezzoFin
 
 6 se age del passeggero e' maggiore di 65 anni
-prezzoFin1 viene scontato del 20%
+prezzoFin1 viene scontato del 20% aggiorna poi la variabile prezzoFin
