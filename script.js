@@ -29,23 +29,33 @@ const prezzoKm = 0.21;
 
 let prezzoFin1 = numKm * prezzoKm;
 
-console.log( 'prezzo finale' , prezzoFin1);
 
 if (age < 18) {
 
-  prezzoFin1 *= 0.8;
+  prezzoFin1 = prezzoFin1 * 0.8;
  
   document.getElementById("risp").innerHTML = ("Hai diritto ad uno sconto del 20% per i minori di 18 anni.");
 
 } else if (age > 65) {
 
-  prezzoFin1 *= 0.6;
+  prezzoFin1 = prezzoFin1 * 0.6;
+
   document.getElementById("risp").innerHTML = ("Hai diritto ad uno sconto del 40% per gli over 65.");
 
 
 
 }
 
+else{
+  prezzoFin1 = prezzoFin1;
+
+  document.getElementById("risp").innerHTML = (" Purtroppo non Hai diritto ad uno sconto ");
+
+}
+
+
 
 
 console.log(`Il prezzo finale del biglietto è ${prezzoFin1.toFixed(2)} €`);
+
+
