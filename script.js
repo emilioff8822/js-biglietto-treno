@@ -17,7 +17,7 @@ prezzoFin1 viene scontato del 20% aggiorna poi la variabile prezzoFin
 
 */
 
-const numKm = parseInt(prompt("Inserisci il numero di chilometri da percorrere"));
+const numKm = parseFloat(prompt("Inserisci il numero di chilometri da percorrere"));
 
 const age = parseInt(prompt("Inserisci l'età del passeggero"));
 
@@ -30,3 +30,16 @@ const prezzoKm = 0.21;
 let prezzoFin1 = numKm * prezzoKm;
 
 console.log( 'prezzo finale' , prezzoFin1);
+
+if (age < 18) {
+
+  prezzoFin1 *= 0.8;
+
+} else if (age > 65) {
+
+  prezzoFin1 *= 0.6;
+}
+
+
+
+console.log(`Il prezzo finale del biglietto è ${prezzoFin1.toFixed(2)} €`);
